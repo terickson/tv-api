@@ -1,0 +1,7 @@
+[Logging]
+level: DEBUG
+moduleName: <<base>>.roku
+
+[TV]
+serialPort: /dev/ttyUSB0
+type: old
