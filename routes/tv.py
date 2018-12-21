@@ -14,10 +14,10 @@ def actions():
 def create_action():
     current_app.logger.info("post tv action")
     tvInfo = request.json
-    if 'comand' not in tvInfo:
-        return Response(json.dumps({"message": "attribute comand must be passed"}), status=412, mimetype='application/json')
+    if 'command' not in tvInfo:
+        return Response(json.dumps({"message": "attribute command must be passed"}), status=412, mimetype='application/json')
     if 'value' in tvInfo:
-        getattr(current_app.tv, tvInfo.get('comand'))(tvInfo.get('value'))
+        getattr(current_app.tv, tvInfo.get('command'))(tvInfo.get('value'))
     else:
-        getattr(current_app.tv, tvInfo.get('comand'))()
+        getattr(current_app.tv, tvInfo.get('command'))()
     return Response(json.dumps({"message": "success"}), status=201, mimetype='application/json')
