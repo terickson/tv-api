@@ -1,4 +1,4 @@
-Roku-API
+TV-API
 ==================
 This api allows you to control local TV.  Right now it is setup to work with Samsung using their serial ex-link attachement.  I use raspberry pi with a usb to 3.5mm serial adapter to connect to the ex-link samsung port and control the tv over serial.  This way I can work with very old all the way up to the latest version of samsung tvs.
 
