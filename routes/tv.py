@@ -3,7 +3,7 @@ from flask import Blueprint, current_app, Response, request
 from pprint import pprint
 from time import sleep
 
-roku_template = Blueprint('tv_template', __name__, template_folder='templates')
+tv_template = Blueprint('tv_template', __name__, template_folder='templates')
 
 
 @tv_template.route('/actions', methods=['POST'])
