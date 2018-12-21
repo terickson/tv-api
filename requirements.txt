@@ -1,4 +1,3 @@
-roku
 flask
 flask-cors
 configparser
