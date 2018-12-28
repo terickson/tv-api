@@ -17,7 +17,7 @@ def create_action():
     if 'command' not in tvInfo:
         return Response(json.dumps({"message": "attribute command must be passed"}), status=412, mimetype='application/json')
     if 'value' in tvInfo:
-        getattr(current_app.tv, tvInfo.get('command'))(tvInfo.get('value'))
+        getattr(current_app.tv, tvInfo.get('command'))(int(tvInfo.get('value')))
     else:
         getattr(current_app.tv, tvInfo.get('command'))()
     return Response(json.dumps({"message": "success"}), status=201, mimetype='application/json')
