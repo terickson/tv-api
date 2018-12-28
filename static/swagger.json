@@ -1,13 +1,13 @@
 {
   "swagger": "2.0",
    "info": {
-     "title": "Roku API",
-     "description": "API for manageing roku system.",
+     "title": "TV API",
+     "description": "API for manageing the tv.",
      "version": "1.0"
    },
    "externalDocs":{
      "description": "Github Repo",
-     "url": ""
+     "url": "https://github.com/terickson/tv-api"
    },
    "produces": ["application/json"],
    "paths": {
